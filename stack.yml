@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  gh-bot:
+    lang: node
+    handler: ./gh-bot
+    image: mdatsev/gh-bot
+    environment_file:
+    - env.yml
