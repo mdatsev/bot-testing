@@ -7,5 +7,6 @@ functions:
     lang: node
     handler: ./gh-bot
     image: mdatsev/gh-bot
-    environment_file:
-    - env.yml
+    secrets:
+      - auth-token
+      - webhook-secret
